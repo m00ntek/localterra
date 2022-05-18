@@ -499,21 +499,21 @@ fn release_escrow(
         max_spread: None,
         to: Some(factory_cfg.staking_addr.to_string()),
     };
-    let staking_share_msg = SubMsg {
-        id: SEND_AND_SWAP_STAKING_SHARE_REPLY_ID,
-        msg: CosmosMsg::Wasm(WasmMsg::Execute {
-            contract_addr: factory_cfg.local_ust_pool_addr.to_string(),
-            msg: to_binary(&swap_msg).unwrap(),
-            funds: vec![Coin {
-                denom: "uusd".to_string(),
-                amount: staking_share,
-            }],
-        }),
-        gas_limit: None,
-        reply_on: ReplyOn::Never,
-    };
+    // let staking_share_msg = SubMsg {
+    //     id: SEND_AND_SWAP_STAKING_SHARE_REPLY_ID,
+    //     msg: CosmosMsg::Wasm(WasmMsg::Execute {
+    //         contract_addr: factory_cfg.local_ust_pool_addr.to_string(),
+    //         msg: to_binary(&swap_msg).unwrap(),
+    //         funds: vec![Coin {
+    //             denom: "uusd".to_string(),
+    //             amount: staking_share,
+    //         }],
+    //     }),
+    //     gas_limit: None,
+    //     reply_on: ReplyOn::Never,
+    // };
 
-    send_msgs.push(staking_share_msg);
+    //send_msgs.push(staking_share_msg);
 
     // Send released trade funds to buyer
     send_msgs.push(SubMsg::new(CosmosMsg::Bank(BankMsg::Send {

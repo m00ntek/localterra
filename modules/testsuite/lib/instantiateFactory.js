@@ -35,7 +35,7 @@ async function instantiateFactory(client, user, options = {}) {
     offer_code_id: codeIds.offer,
     trade_code_id: codeIds.trade,
     staking_code_id: codeIds.localterra_staking,
-    local_ust_pool_addr: process.env.LOCAL_UST_POOL_ADDR,
+    //local_ust_pool_addr: process.env.LOCAL_UST_POOL_ADDR,
     warchest_addr: process.env.WARCHEST_ADDR,
     local_token_addr: process.env.LOCAL_TOKEN_ADDR,
   };

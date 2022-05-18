@@ -10,7 +10,8 @@
     "bombay:tradeFlow": "UPLOAD=true  NETWORK_ENV=bombay mocha './test/tradeFlow.spec.js' ; npm run git-commit",
     "bombay:staking": "UPLOAD=true  NETWORK_ENV=bombay mocha './test/staking.spec.js' ; npm run git-commit",
     "bombay": "UPLOAD=true  NETWORK_ENV=bombay mocha './test/**/*.spec.js' ",
-    "bombay:deploy": "NETWORK_ENV=bombay node lib/deploy.js "
+    "bombay:deploy": "NETWORK_ENV=bombay node lib/deploy.js ",
+    "terrarium:deploy": "NETWORK_ENV=terrarium node lib/deploy.js "
   },
   "repository": {
     "type": "git",

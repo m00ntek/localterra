@@ -10,7 +10,7 @@ pub struct InstantiateMsg {
     pub trading_incentives_code_id: u64,
     pub offer_code_id: u64,
     pub trade_code_id: u64,
-    pub local_ust_pool_addr: String,
+    //pub local_ust_pool_addr: String,
     pub warchest_addr: String,
     pub staking_code_id: u64,
     pub local_token_addr: String,
@@ -30,7 +30,7 @@ pub enum QueryMsg {
 pub struct Config {
     pub trade_code_id: u64,
     pub local_token_addr: Addr,
-    pub local_ust_pool_addr: Addr,
+    //pub local_ust_pool_addr: Addr,
     pub warchest_addr: Addr,
     pub gov_addr: Addr,
     pub offers_addr: Addr,

@@ -29,7 +29,7 @@ pub fn instantiate(
     let cfg = Config {
         trade_code_id: msg.trade_code_id,
         local_token_addr: deps.api.addr_validate(&msg.local_token_addr).unwrap(),
-        local_ust_pool_addr: deps.api.addr_validate(&msg.local_ust_pool_addr).unwrap(),
+        //local_ust_pool_addr: deps.api.addr_validate(&msg.local_ust_pool_addr).unwrap(),
         warchest_addr: deps.api.addr_validate(&msg.warchest_addr).unwrap(),
         gov_addr: Addr::unchecked(""),
         offers_addr: Addr::unchecked(""),

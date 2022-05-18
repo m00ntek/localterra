@@ -15,8 +15,8 @@ import { updateTrade } from "@/store/firebase";
 import { newTrade } from "../firebase";
 
 const lcdOptions = {
-    URL: "https://bombay-lcd.terra.dev", // URL: "http://143.244.190.1:3060",
-    chainID: "bombay-12", // chainID: "localterra"
+    URL: "http://localhost:1317", // URL: "http://143.244.190.1:3060",
+    chainID: "localterra", // chainID: "localterra"
 };
 let terra = new LCDClient(lcdOptions);
 const ext = new Extension();
