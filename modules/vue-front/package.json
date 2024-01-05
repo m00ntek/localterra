@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "@terra-money/terra.js": "^2.1.23",
-        "axios": "^0.22.0",
+        "axios": "^1.6.4",
         "buffer": "^6.0.3",
         "core-js": "^3.6.5",
         "firebase": "^9.4.1",
