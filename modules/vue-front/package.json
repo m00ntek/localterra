@@ -15,7 +15,7 @@
         "deploy": "yarn deploy:contracts && yarn updateFactoryCfg && yarn deploy:contracts"
     },
     "dependencies": {
-        "@terra-money/terra.js": "^2.1.23",
+        "@terra-money/terra.js": "^3.0.10",
         "axios": "^0.22.0",
         "buffer": "^6.0.3",
         "core-js": "^3.6.5",
